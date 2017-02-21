@@ -18,6 +18,7 @@ timezone:          Europe/Paris
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
 
 kramdown:
   auto_ids: true
@@ -37,7 +38,7 @@ owner:
   job: "Web Developer"
   email: arkamat@indiana.edu
   disqus-shortname:
-  twitter: #username
+  twitter: Amruta0016
   facebook: #username
   google:
     plus: #username
@@ -52,7 +53,7 @@ owner:
   linkedin: amrutakamat
   skype: #username
   xing: #username
-  instagram: #username
+  instagram: amruta.kamat
   lastfm: #username
   tumblr: #username
   pinterest: #username
