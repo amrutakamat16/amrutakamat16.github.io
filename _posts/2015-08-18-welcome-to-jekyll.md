@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Distributed Workload Management"
+title:  "Workload Distribution"
 date: 2017-02-20 08:07:19
 comments: true
 ---
