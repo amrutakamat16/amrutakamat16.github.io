@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blog - Workload Distribution Management"
+title:  "Workload Distribution Management"
 date: 2017-02-20 08:07:19
 comments: true
 ---
