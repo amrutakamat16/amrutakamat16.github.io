@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Blog - Workload Distribution Management"
+date: 02/15/2017
 comments: true
 ---
 Welcome to my blog on distributed workload management!
