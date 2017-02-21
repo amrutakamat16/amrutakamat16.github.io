@@ -1,13 +1,16 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Blog - Distributed Workoad Management"
 date:   2015-08-18 15:07:19
-categories: [tutorial]
 comments: true
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Welcome to the blog related to distributed workload management!
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Theme 3 focuses on finding possible solutions to the issue of managing workloads in a distributed environment with a micro-services based architecture, with emphasis on how these would benefit Apache Airavata. This leads to finding the best way that different micro-services (eg: Airavata micro-services) should communicate and distribute work, in such a way that:
+
+We maintain the ability to scale these micro-services whenever needed (autoscale perhaps?).
+The architecture achieves fault tolerance.
+We can deploy these micro-services independently, or better in a containerized manner – keeping in mind the ability to use devops for deployment.
 
 <!--more-->
 
