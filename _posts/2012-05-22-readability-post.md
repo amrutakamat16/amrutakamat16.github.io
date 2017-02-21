@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Testing Readability with a Bunch of Text"
+title: "Conclusion"
+date:   2017-02-17 15:07:19
 comments: true
 ---
 
