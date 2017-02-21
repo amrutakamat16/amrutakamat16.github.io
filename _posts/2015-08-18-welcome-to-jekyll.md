@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Blog - Distributed Workoad Management"
-date:   2015-08-18 15:07:19
+title:  "Blog - Workload Distribution Management"
+date:   2017-02-20 15:07:19
 comments: true
 ---
 Welcome to the blog related to distributed workload management!
