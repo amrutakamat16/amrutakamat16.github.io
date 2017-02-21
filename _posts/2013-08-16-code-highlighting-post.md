@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Syntax Highlighting Post
-excerpt: "Demo post displaying the various ways of highlighting code in Markdown."
-categories: [code]
-modified: 2014-09-14
+title: Problem Statement
+excerpt: Under this theme we are possibly trying to find a solution to the issue of managing distributed workload in Apache Airavata. With a distributed workload, what matters most is end-to-end throughput and latency through the entire system, and how resources are efficiently and fairly shared among different applications.
+categories: [problem]
+modified: 2017-02-20
 comments: true
 ---
 
