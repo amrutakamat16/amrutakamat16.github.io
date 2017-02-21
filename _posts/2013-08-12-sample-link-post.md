@@ -8,10 +8,9 @@ We started our discussions initially on state-full vs state-less architecture to
 
 Our final architecture makes all our tasks independent of each other and store the workflow logic in a centralized orchestrator (maybe graph database) which would be made highly available.    
 
-We have made a wiki for each of these solutions with detailed explainations:    
-*Proof-of-Concept Example : Wiki link     
-*A state-full design : Wiki link     
-*A state-less design : Wiki link     
-*A centralized, Apache Mesos inspired design [Final]: Wiki link     
-*[KB] Messaging infrastructures : Wiki link" 
+* Proof-of-Concept Example : [Wiki link](https://github.com/airavata-courses/spring17-workload-management/wiki/Test-Example-&-Possible-Solutions)
+* A state-full design : [Wiki link](https://github.com/airavata-courses/spring17-workload-management/wiki/1.-A-state-full-design-for-workload-management)
+* A state-less design : [Wiki link](https://github.com/airavata-courses/spring17-workload-management/wiki/2.-A-state-less-design-for-workload-management)
+* A centralized, Apache Mesos inspired design [Final]: [Wiki link](https://github.com/airavata-courses/spring17-workload-management/wiki/%5BFinal%5D-Centralized-architecture-for-workload-management)
+* [KB] Messaging infrastructures : [Wiki link](https://github.com/airavata-courses/spring17-workload-management/wiki/Messaging-infrastructures)  
 
