@@ -2,7 +2,6 @@
 layout: post
 title: "Possible Solutions"
 excerpt: "Our final architecture makes all our tasks independent of each other and store the workflow logic in a centralized orchestrator (maybe graph database) which would be made highly available."
-date:   2017-02-18 15:07:19
 share: true
 ---
 2017-02-18
@@ -24,4 +23,4 @@ We have made a wiki for each of these solutions with detailed explainations:
 For storing the workflows we are currently exploring possible options of graph databases. 
 I have looked into the Neo4J graph database which provides us an option of storing DAGs in the form of nodes and relationships between them. It uses the Cypher query language.
 
-I have added all my finding to the issue created on github. [Link](https://github.com/airavata-courses/spring17-workload-management/issues/3)
+I have added all my findings to the issue created on github. [Link](https://github.com/airavata-courses/spring17-workload-management/issues/3)
