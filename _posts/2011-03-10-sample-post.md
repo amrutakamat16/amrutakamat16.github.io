@@ -1,6 +1,7 @@
 ---
 layout: post
 title: My Contributions [Updated]
+excerpt: "This section will include all links to all my contributions on dev list and github. Please link on the above link."
 time: 02/10/2017 05:05:05
 comments: true
 ---
