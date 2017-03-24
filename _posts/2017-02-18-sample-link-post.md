@@ -36,3 +36,12 @@ We need an orchestrator for fetching graphs from graph database based on the req
 </p>
 
 We are still exploring what details should be stored in a node in graph database and in what format should the output be generated.
+
+---
+2017-03-23   
+    
+Over the last 2 weeks, we implemented an orchestrator. The orchestrator fetches DAG from the graph database. In order to maintain state of the DAG we created a State database in MySQL. The MySQL database will store experiment id, experiment type and state of the DAG. For mocking, we have created 4 experiment types for fetching DAGs. The graph database will send 1st node from the requested DAG to the orchestrator. The orchestrator will create an entry for maintaining state of DAG in State DB and publish the scheduling request to the scheduler. On receiving response from the scheduler, the orchestrator will fetch the next node in the DAG from graph DB for the corresponding experiment type and similarly update entry in State DB and publish the scheduling request.
+
+<p align="center">
+  <img src="../../../orchestratorWithDB.png" width="450"/>
+</p>
