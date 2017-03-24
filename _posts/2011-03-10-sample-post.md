@@ -27,9 +27,7 @@ RabbitMQ Integration: [Link](https://github.com/airavata-courses/spring17-worklo
 03/23/2017    
     
 Utility to create mock DAGs: [Link](https://github.com/airavata-courses/spring17-workload-management/commit/de98512c7d124379488a3a3dfc5beaebd2db3951)     
-
 JPA for state management: [Link](https://github.com/airavata-courses/spring17-workload-management/commit/c0b19943b7f089e2439ae1210ceec2a2c8b8efe3)    
-      
 Orchestrator: [Link](https://github.com/airavata-courses/spring17-workload-management/commit/7ac56a971e6a85146ad2273d630c4770b32a17f8) 
 
 
