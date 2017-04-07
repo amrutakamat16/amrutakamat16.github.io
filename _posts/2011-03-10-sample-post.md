@@ -30,6 +30,11 @@ Utility to create mock DAGs: [Link](https://github.com/airavata-courses/spring17
 JPA for state management: [Link](https://github.com/airavata-courses/spring17-workload-management/commit/c0b19943b7f089e2439ae1210ceec2a2c8b8efe3)    
 Orchestrator: [Link](https://github.com/airavata-courses/spring17-workload-management/commit/7ac56a971e6a85146ad2273d630c4770b32a17f8) 
 
+---
+04/06/2017
+     
+Publish nodes in order to scheduler. Receive response and send next node: [Link](https://github.com/airavata-courses/spring17-workload-management/commit/37db1f413b42f00b18f772199c188306ec78ffd2)    
+Other general commits: [Link](https://github.com/airavata-courses/spring17-workload-management/commits/develop)
 
 
 
