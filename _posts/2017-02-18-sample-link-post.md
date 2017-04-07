@@ -53,7 +53,8 @@ Since we completed the orchestrator the previous week. We did a complete end to 
 The entire architecture for distribued task execution is now in place. Below is the architecture diagram:
 
 <p align="center">
-  <img src="../../../architecture.png" width="450"/>
+  <img src="../../../architecture.png" style="height: 380px !important;
+    width: 900px !important;">
 </p>
      
 Please refer "My contributions" sections to go through my github commits done in the previous 2 weeks.     
