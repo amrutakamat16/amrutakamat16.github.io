@@ -45,3 +45,18 @@ Over the last 2 weeks, we implemented an orchestrator. The orchestrator fetches 
 <p align="center">
   <img src="../../../orchestratorWithDB.png" width="450"/>
 </p>
+
+---
+2017-04-06    
+     
+Since we completed the orchestrator the previous week. We did a complete end to end flow this week.
+The entire architecture for distribued task execution is now in place. Below is the architecture diagram:
+
+<p align="center">
+  <img src="../../../architecture.png" width="450"/>
+</p>
+     
+Please refer "My contributions" sections to go through my github commits done in the previous 2 weeks.     
+
+
+
