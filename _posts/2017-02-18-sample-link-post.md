@@ -59,5 +59,16 @@ The entire architecture for distribued task execution is now in place. Below is 
      
 Please refer "My contributions" sections to go through my github commits done in the previous 2 weeks.     
 
+---
+2017-04-06    
+
+The below diagram shows the concrete version of DAG in the graph database. The graph database will initially have an abstract DAG which will be fetched and converted to a concrete DAG. The concrete version of the DAG will be used to submit the experiments.    
+
+<p align="center">
+  <img src="../../../DAG.png" style="height: 380px !important;
+    width: 900px !important;">
+</p>
+    
+Every node within the concrete DAG will store the entire scheduling request needed for the corresponding task execution. It will also store a flag which will keep a track of whether the task was executed or it failed. The scheduling request is stored within the node in binary format and later retrived when the task is to be scheduled. On receiving a response, the corresponding experiment type is fetched from the response and the flag within the currently executed task node is set for successful completion. The next node in the DAG is then sent for scheduling. In case of a system failure or crash, only those nodes whose flag is not set are executed again. This is will help prevent re-execution of entire DAG.   
 
 
