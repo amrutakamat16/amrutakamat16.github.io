@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Distributed Workload Management"
+title:  "Work Summary"
 date: 2010-08-18 08:07:19
 comments: true
 ---     
