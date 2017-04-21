@@ -36,6 +36,14 @@ Orchestrator: [Link](https://github.com/airavata-courses/spring17-workload-manag
 Publish nodes in order to scheduler. Receive response and send next node: [Link](https://github.com/airavata-courses/spring17-workload-management/commit/37db1f413b42f00b18f772199c188306ec78ffd2)    
 Other general commits: [Link](https://github.com/airavata-courses/spring17-workload-management/commits/develop)
 
+---
+04/20/2017     
+
+Serialization utils for converting scheduling request to binary and vice versa: [Link](https://github.com/airavata-courses/spring17-workload-management/commit/708669d64fd7b3f8a15d6b43d3ceb7e82581a332)    
+Store scheduling request in node: [Link](https://github.com/airavata-courses/spring17-workload-management/commit/168bb92fe0b5c4e733dfc9a42074f0db7ab33215)    
+Fetching scheduling request from node. Fetching entire Node object from DAG: [Link](https://github.com/airavata-courses/spring17-workload-management/commit/9c4c140306bf1de889ac8d379dffcd409fde97eb)    
+Setting completion flag within node to track status: [Link](https://github.com/airavata-courses/spring17-workload-management/commit/decdd3288595f3631ee715d95512f703880e54df) 
+
 
 
 
