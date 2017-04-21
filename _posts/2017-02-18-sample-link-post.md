@@ -7,10 +7,17 @@ share: true
 ---
 2017-02-18
 
+<b>GOAL:</b>    
+
 We started our discussions initially on state-full vs state-less architecture to solve the problem. Later, we discussed the centralized vs decentralized architectures. I was more inclined towards having a decentralized architecture as a centralized workflow would mean a single point of failure. Each architecture has its own pros and cons. It was a tradeoff between a centralized workflow vs dependent microservices. We had our discussions on the Apache Airavata mailing list and these discussions helped us reach a final conclusion of having a centralized architecture with a highly available orchestrator.   
 
-Our final architecture makes all our tasks independent of each other and store the workflow logic in a centralized orchestrator (maybe graph database) which would be made highly available.      
-We have made a wiki for each of these solutions with detailed explainations:   
+<b>CONCLUSION:</b>    
+
+Our final architecture makes all our tasks independent of each other and store the workflow logic in a centralized orchestrator (maybe graph database) which would be made highly available.
+
+<b>SUPPORTING DOCUMENTS:</b>    
+
+We have made a wiki for each of these solutions with detailed explainations which also includes the architecture diagram discussed:   
     
 * Proof-of-Concept Example : [Wiki link](https://github.com/airavata-courses/spring17-workload-management/wiki/Test-Example-&-Possible-Solutions)
 * A state-full design : [Wiki link](https://github.com/airavata-courses/spring17-workload-management/wiki/1.-A-state-full-design-for-workload-management)
@@ -29,11 +36,18 @@ I have added all my findings to the issue created on github. [Link](https://gith
 ---
 2017-03-09   
     
-We need an orchestrator for fetching graphs from graph database based on the request. I have integrated RabbitMQ to send DAG over the request queue to the scheduler and at the same time accept data sent via the response queue. Please refer the below diagram to have a clear picture of the orchestrator functions:    
+<b>GOAL:</b> 
+
+We need an orchestrator for fetching graphs from graph database based on the request. This was basically suggested to seperate out the concerns between a scheduler and a orchestrator. The orchestrator will be the one communicating with the database and scheduler need not worry about database communication. It will only schedule the tasks which it receives from the orchestrator.     
+
+<b>APPROACHES:</b>     
+I have integrated RabbitMQ to send DAG over the request queue to the scheduler and at the same time accept data sent via the response queue. Please refer the below diagram to have a clear picture of the orchestrator functions:    
 
 <p align="center">
   <img src="../../../orchestrator.png" width="450" style="height: 228px; width: 600px;">
-</p>
+</p>     
+
+<b>CONCLUSION:</b>    
 
 We are still exploring what details should be stored in a node in graph database and in what format should the output be generated.
 
