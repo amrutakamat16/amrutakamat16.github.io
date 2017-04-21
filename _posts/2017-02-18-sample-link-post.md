@@ -40,7 +40,8 @@ I have added all my findings to the issue created on github. [Link](https://gith
 
 We need an orchestrator for fetching graphs from graph database based on the request. This was basically suggested to seperate out the concerns between a scheduler and a orchestrator. The orchestrator will be the one communicating with the database and scheduler need not worry about database communication. It will only schedule the tasks which it receives from the orchestrator.     
 
-<b>APPROACHES:</b>     
+<b>APPROACHES:</b>   
+
 I have integrated RabbitMQ to send DAG over the request queue to the scheduler and at the same time accept data sent via the response queue. Please refer the below diagram to have a clear picture of the orchestrator functions:    
 
 <p align="center">
@@ -54,7 +55,15 @@ We are still exploring what details should be stored in a node in graph database
 ---
 2017-03-23   
     
-Over the last 2 weeks, we implemented an orchestrator. The orchestrator fetches DAG from the graph database. In order to maintain state of the DAG we created a State database in MySQL. The MySQL database will store experiment id, experiment type and state of the DAG. For mocking, we have created 4 experiment types for fetching DAGs. The graph database will send 1st node from the requested DAG to the orchestrator. The orchestrator will create an entry for maintaining state of DAG in State DB and publish the scheduling request to the scheduler. On receiving response from the scheduler, the orchestrator will fetch the next node in the DAG from graph DB for the corresponding experiment type and similarly update entry in State DB and publish the scheduling request.
+<b>GOAL:</b>     
+
+To maintain a relational database which can keep track of the state of the DAG. In case of system crash or any failure, the nodes after the one which failed will be executed. The entire DAG need not be executed again.    
+
+<b>APPROACHES:</b>    
+
+Over the last 2 weeks, we implemented an orchestrator. The orchestrator fetches DAG from the graph database. In order to maintain state of the DAG we created a State database in MySQL. The MySQL database will store experiment id, experiment type and state of the DAG. For mocking, we have created 4 experiment types for fetching DAGs. The graph database will send 1st node from the requested DAG to the orchestrator. The orchestrator will create an entry for maintaining state of DAG in State DB and publish the scheduling request to the scheduler. On receiving response from the scheduler, the orchestrator will fetch the next node in the DAG from graph DB for the corresponding experiment type and similarly update entry in State DB and publish the scheduling request.    
+
+<b>ARCHITECTURE:</b>    
 
 <p align="center">
   <img src="../../../orchestratorWithDB.png" width="450" style="width: 600px !important;"/>
@@ -62,9 +71,17 @@ Over the last 2 weeks, we implemented an orchestrator. The orchestrator fetches 
 
 ---
 2017-04-06    
+
+<b>GOAL:</b>   
+
+To setup an end to end flow. 
+
+<b>APPROACHES:</b>   
      
 Since we completed the orchestrator the previous week. We did a complete end to end flow this week.
-The entire architecture for distribued task execution is now in place. Below is the architecture diagram:
+The entire architecture for distribued task execution is now in place. Below is the architecture diagram.    
+
+<b>ARCHITECTURE:</b>    
 
 <p align="center">
   <img src="../../../architecture.png" style="height: 380px !important;
