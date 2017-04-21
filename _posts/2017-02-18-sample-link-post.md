@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Possible Solutions [Updated]"
+title: "Possible Solutions [Link]"
 excerpt: "Our final architecture makes all our tasks independent of each other and store the workflow logic in a centralized orchestrator (maybe graph database) which would be made highly available."
 date:   2017-02-18 15:07:19
 share: true
