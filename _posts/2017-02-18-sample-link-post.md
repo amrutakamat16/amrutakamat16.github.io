@@ -28,8 +28,15 @@ We have made a wiki for each of these solutions with detailed explainations whic
 ---    
 2017-02-27     
 
+<b>GOAL:</b>    
+
 For storing the workflows we are currently exploring possible options of graph databases. 
-I have looked into the Neo4J graph database which provides us an option of storing DAGs in the form of nodes and relationships between them. It uses the Cypher query language.
+
+<b>POSSIBLE SOLUTIONS:</b>    
+
+I have looked into the Neo4J graph database which provides us an option of storing DAGs in the form of nodes and relationships between them. It uses the Cypher query language. Neo4j database basically because it has an option of storing data within the nodes. It can fetch data much faster than a relational database. Also one node can be a part of many DAGs thus removing the possiblity of duplication which would have been the case with relational database.    
+
+<b>CONCLUSION:</b>     
 
 I have added all my findings to the issue created on github. [Link](https://github.com/airavata-courses/spring17-workload-management/issues/3)
 
@@ -92,6 +99,12 @@ Please refer "My contributions" sections to go through my github commits done in
 
 ---
 2017-04-20    
+
+<b>GOAL:</b>  
+
+The goal of this week was to seperate out an abstract and concrete DAG. The concrete being the one which has all the information required for scheduling the experiment. The main goal is to keep all details required for scheduling within the DAG node.   
+
+<b> APPROACHES: </b>    
 
 The below diagram shows the concrete version of DAG in the graph database. The graph database will initially have an abstract DAG which will be fetched and converted to a concrete DAG. The concrete version of the DAG will be used to submit the experiments.    
 
