@@ -5,8 +5,6 @@ date: 2010-08-18 08:07:19
 comments: true
 ---     
 
-Summary of work for the entire semester:
-
 The summary of all the tasks done in the entire semester includes:
 
 1. Identifying a database for storing all the workflows.
