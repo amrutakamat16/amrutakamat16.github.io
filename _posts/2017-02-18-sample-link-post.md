@@ -60,7 +60,7 @@ The entire architecture for distribued task execution is now in place. Below is 
 Please refer "My contributions" sections to go through my github commits done in the previous 2 weeks.     
 
 ---
-2017-04-06    
+2017-04-20    
 
 The below diagram shows the concrete version of DAG in the graph database. The graph database will initially have an abstract DAG which will be fetched and converted to a concrete DAG. The concrete version of the DAG will be used to submit the experiments.    
 
