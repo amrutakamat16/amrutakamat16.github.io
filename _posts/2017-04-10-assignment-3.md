@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Assignment 4"
+title: "Assignment 3"
 excerpt: <a href="https://amrutakamat16.github.io//2017/02/18/assignment-4.html">Know more </a>
 date:   2017-02-18 15:07:19
 share: true
