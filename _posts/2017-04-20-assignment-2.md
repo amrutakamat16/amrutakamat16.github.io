@@ -25,3 +25,8 @@ I have integrated RabbitMQ to send DAG over the request queue to the scheduler a
 
 We are still exploring what details should be stored in a node in graph database and in what format should the output be generated.
 I have added all my findings to the issue created on github. [Link](https://github.com/airavata-courses/spring17-workload-management/issues/3)
+
+<b>Discussions on the Apache Airavata Developer List</b>        
+       
+Centralized vs Decentralized design: [Link](http://mail-archives.apache.org/mod_mbox/airavata-dev/201702.mbox/%3C1486540778191.46077%40indiana.edu%3E)    
+Suggested Messaging Architectures: [Link](http://mail-archives.apache.org/mod_mbox/airavata-dev/201702.mbox/%3C1486103917127.67213%40indiana.edu%3E)
