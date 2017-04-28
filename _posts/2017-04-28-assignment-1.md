@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Assignment 1"
-excerpt: "Initial discussions and proposed architecture." <a href="https://amrutakamat16.github.io//2017/02/18/assignment-1.html">Know more</a>
+excerpt: <a href="https://amrutakamat16.github.io//2017/02/18/assignment-1.html">Know more </a>
 date:   2017-02-18 15:07:19
 share: true
 ---
