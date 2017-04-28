@@ -5,18 +5,23 @@ excerpt: <a href="https://amrutakamat16.github.io//2017/02/18/assignment-4.html"
 date:   2017-02-18 15:07:19
 share: true
 ---
-2017-03-23   
-    
-<b>GOAL:</b>     
+2017-04-06    
 
-To maintain a relational database which can keep track of the state of the DAG. In case of system crash or any failure, the nodes after the one which failed will be executed. The entire DAG need not be executed again.    
+<b>GOAL:</b>   
 
-<b>APPROACHES:</b>    
+To setup an end to end flow. 
 
-Over the last 2 weeks, we implemented an orchestrator. The orchestrator fetches DAG from the graph database. In order to maintain state of the DAG we created a State database in MySQL. The MySQL database will store experiment id, experiment type and state of the DAG. For mocking, we have created 4 experiment types for fetching DAGs. The graph database will send 1st node from the requested DAG to the orchestrator. The orchestrator will create an entry for maintaining state of DAG in State DB and publish the scheduling request to the scheduler. On receiving response from the scheduler, the orchestrator will fetch the next node in the DAG from graph DB for the corresponding experiment type and similarly update entry in State DB and publish the scheduling request.    
+<b>APPROACHES:</b>   
+     
+Since we completed the orchestrator the previous week. We did a complete end to end flow this week.
+The entire architecture for distribued task execution is now in place. Below is the architecture diagram.    
 
 <b>ARCHITECTURE:</b>    
 
 <p align="center">
-  <img src="../../../orchestratorWithDB.png" width="450" style="width: 600px !important;"/>
+  <img src="../../../architecture.png" style="height: 380px !important;
+    width: 900px !important;">
 </p>
+     
+Please refer "My contributions" sections to go through my github commits done in the previous 2 weeks.     
+
