@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: 
 title: "Assignment 5"
 excerpt: <a href="https://amrutakamat16.github.io//2017/02/18/assignment-5.html">Know more </a>
 date:   2017-02-18 15:07:19
-share: true
+share: 
 ---
 2017-04-20    
 
